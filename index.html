@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Lucas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.JPG" alt="">
+            </div>
+            <h1>Lucas Gomez</h1>
+            <h2>Desarrollador de software.</h2>
+            <div class="redes">
+                <a href="https://github.com/gmzLucass"><i class="fa-brands fa-git Hub"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-gomez-2ba1a9326/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lucas Gomez.</span> Soy un desarrollador con pasión por el backend y una sólida
+                experiencia
+                en JavaScript, Python y Kotlin. Mi conocimiento también abarca el frontend, utilizando XML, CSS y
+                Bootstrap para crear interfaces
+                atractivas y funcionales. Además, tengo habilidades en la gestión de bases de datos, tanto en SQL Server
+                como en MySQL. Estoy comprometido
+                con la excelencia en el desarrollo de software y siempre busco desafíos que me permitan crecer y
+                aprender.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29-05-1998
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lucasg.cbaarg@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Villa Del Rosario, Córdoba, Argentina.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador en Lotify!</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico Electromecánico</h4>
+                        <span class="casa">I.P.E.T. N°55.</span>
+                        <span class="fecha">2010 - 2016</span>
+                        <p>Formación técnica en diseño, instalación y mantenimiento de sistemas electromecánicos y
+                            automatizados.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programacion PLC Simenes S7.</h4>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Otorgado por la empresa donde trabajo. Capacitación en la realización de dispositivos
+                            automatizados utilizando PLC Siemens S7-1200.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo de Software.</h4>
+                        <span class="casa">I.S.V.D.R.</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Formación integral en desarrollo de software, con conocimientos prácticos en Arduino, Visual
+                            Basic, JavaScript, Python, SQL, MySQL y Android Studio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Lotify</span>
+                        <span class="fecha">2024 - Acuatlmente</span>
+                        <p>
+                            <strong>Lotify.</strong> <br>
+                            Aplicación para la gestión de lotes agrícolas. <br>
+                            <br>
+                            Lotify es una herramienta diseñada para ingenieros agropecuarios y propietarios de campos,
+                            facilitando la administración eficiente de lotes agrícolas. La aplicación ofrece
+                            características clave como: <br>
+                            <br>
+                            <strong>Registro de Lotes:</strong> Permite a los usuarios registrar y gestionar múltiples
+                            lotes agrícolas. <br>
+                            <strong>Monitoreo en Tiempo Real:</strong> Proporciona datos actualizados sobre temperatura,
+                            humedad y condiciones de lluvia a través de una API integrada. <br>
+                            <strong>Gestión de Líquidos:</strong> Permite registrar detalles sobre los líquidos
+                            utilizados en cada lote. <br>
+                            <strong>Interfaz Intuitiva:</strong> Desarrollada en Kotlin para dispositivos móviles, con
+                            sincronización en tiempo real y acceso a datos desde cualquier lugar. <br>
+                            <strong>Autenticación Segura:</strong> Implementa Firebase para una autenticación segura y
+                            gestión de usuarios. <br>
+                            <br>
+                            Lotify está orientada a mejorar la eficiencia y la toma de decisiones en el campo,
+                            ofreciendo información valiosa y actualizada para optimizar las prácticas agrícolas.
+                        </p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="CV GomezL.pdf" download="CV">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/CRUD.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Cruds</h3>
+                        <p>PHP, MySQL</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/images.png" alt="">
+                    <div class="overlay">
+                        <h3>Bases de datos</h3>
+                        <p>MySQL, SQL Server</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>UI/UX</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/jspy.png" alt="">
+                    <div class="overlay">
+                        <h3>Backend</h3>
+                        <p>Js, Py</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Web</h3>
+                        <p>Html, CSS, Boostrap, JS, PY,
+                        </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Inovaciónn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="/Controlador/enviar_correo.php" method="post"></form>
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Ubicacion 2.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Villa Del Rosario, Cordoba,Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                lucasg.cbaarg@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes"><a href="#"><i class="fa-brands fa-git"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
