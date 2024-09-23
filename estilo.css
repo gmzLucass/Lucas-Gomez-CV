@@ -481,22 +481,28 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+.portfolio .galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between; /* Cambiar a space-between para mejor alineación */
 }
-.portfolio .galeria .proyecto{
-    position: relative;
-    max-width: 340px;
-    height: fit-content;
+
+.portfolio .galeria .proyecto {
+    width: 340px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
     margin: 10px;
-    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
 }
-.portfolio .galeria .proyecto img{
+
+.portfolio .galeria .proyecto img {
     width: 100%;
+    height: 100%; /* Para llenar el contenedor */
+    object-fit: cover; /* Mantiene la proporción y cubre el espacio */
     display: block;
 }
+
+
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
